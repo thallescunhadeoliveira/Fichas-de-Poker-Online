@@ -4,7 +4,7 @@
 
 Esse é um projeto de aplicação web que fiz para substituir o uso das fichas de poker quando não tiver disponível para jogar, os jogadores precisam apenas de um baralho.
 
-A aplicação é simples e tem como inputs os valores iniciais e os jogadores. Com isso é criado um banco de dados que simula as transações entre os jogadores e o pote de apostas, incluindo um registro de todas as transações pra facilitar o jogo.
+A aplicação é simples e tem como inputs o valor inicial para cada jogador assim como o número de jogadores e os nomes de cada um. Com isso é criado um banco de dados que simula as transações entre os jogadores e o pote de apostas, incluindo um registro de todas as transações pra facilitar o jogo.
 
 Podem cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial, todos os jogadores receberam essa quantia e o Pote de Apostas começa zerado.
 
