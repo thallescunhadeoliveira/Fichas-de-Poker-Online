@@ -5,4 +5,4 @@ A aplicação é simples e tem como inputs os valores iniciais e os jogadores. C
 
 O design da aplicação também é responsivo para ser usado em mobile.
 
-<img src="https://user-images.githubusercontent.com/89935401/151256936-4f79345b-f6c9-45d5-ba95-cba7bc6eeb34.JPG" alt="fichas_poker" width=20% >
+<img src="https://user-images.githubusercontent.com/89935401/151256936-4f79345b-f6c9-45d5-ba95-cba7bc6eeb34.JPG" alt="fichas_poker" width=30% >
