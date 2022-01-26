@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block body %}
+	<Center><h3 class = "titulo_h3">Participantes</h2></center>
+	<Center>
+		<table class = "tabela_head" width="50%" border = "6">
+			<thead class = "tabela_head">
+				<tr>
+					<th width=500>Conta</th>
+					<th width=500>Nome</th>
+					<th width=500>Quantia</th>
+				</tr>
+			</thead>
+			<tbody id = "tabela_body">
+				{% for participante in participantes %}
+					<tr>
+						<td>{{ participante.id }}</td>
+						<td>{{ participante.nome }}</td>
+						<td>{{ participante.quantia }}</td>
+					</tr>
+				{% endfor %}
+			 </tbody>
+		</table>
+	</Center>
+
+<p></p>
+<form action="/poker2" method="post">
+    <fieldset class = "formulario">
+		<legend>Transações</legend>
+
+		<label for="participantes">De:</label>
+		<input  class = "espaco_caixa" type = "number" min = 1 max = "{{nro_participantes+1}}" id="participantes" name="debito"/><p></p>
+
+		<label for="participantes">Para:</label>
+		<input  class = "espaco_caixa" type = "number" min = 1 max = "{{nro_participantes+1}}" id="participantes" name="credito" value = "{{nro_participantes+1}}"/><p></p>
+
+		<label for="quantia_inicial">Valor:</label>
+		<input  class = "espaco_caixa" type = "number" min = 1 id="quantia_inicial" name="valor" />
+
+	</fieldset>
+
+	<fieldset class = "formulario" id = "sem_borda">
+		<input class="button" type="submit" name="pagar">
+    	<input name="nro_part" hidden=True value="{{nro_participantes}}" >
+    	<input name="qt_inicial" hidden=True value="{{quantia_inicial}}" >
+	</fieldset>
+</form>
+	<Center><h3 class = "titulo_h3">Histórico de Transações</h2></center>
+	<center>
+		<table class = "tabela_head" width="30%" border = "6">
+			<thead class = "tabela_head">
+				<tr>
+					<th width=500>De</th>
+					<th width=500>Para</th>
+					<th width=500>Quantia</th>
+				</tr>
+			</thead>
+			<tbody id = "tabela_body">
+				{% for transacao in transacoes %}
+					<tr>
+						<td>{{ transacao.de }}</td>
+						<td>{{ transacao.para }}</td>
+						<td>{{ transacao.quantia }}</td>
+					</tr>
+				{% endfor %}
+			 </tbody>
+		</table>
+	</center>
+{% endblock %}

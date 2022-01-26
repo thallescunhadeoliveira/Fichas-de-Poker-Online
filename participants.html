@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}			
+			
+
+	<form action="/poker" method="post">
+		<fieldset class = "formulario" >
+			<legend>Nome dos Participantes</legend>
+			
+			
+			{% for participante in range(nro_participantes): %}
+			
+			<label >Participante {{loop.index}}:</label>
+			<input  class = "espaco_caixa" type = "text" name="p{{loop.index}}"/><p></p>
+			
+	        {% endfor %}
+	
+			
+		</fieldset>
+		<input name="nro_part" hidden=True value="{{nro_participantes}}" >
+		<input name="qt_inicial" hidden=True value="{{quantia_inicial}}" >
+		<fieldset class = "formulario" id = "sem_borda">
+            <input class="button" type="submit" value="Começar">
+		</fieldset>
+    </form>
+				
+				
+{% endblock %}

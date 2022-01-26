@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block body %}		
+
+	
+    {% if session.name %}
+		<section>
+		
+			<center><h2 class = "titulo_h2">{{ session.name }}</h2></center>
+
+			<form action="/logout">
+				<fieldset class = "formulario" id = "sem_borda">
+					<input class="button_logout" type="submit" name="Logout" value="Logout">
+				</fieldset>
+			</form>
+			<form action="/participantes" method="post">
+		
+				<fieldset class = "formulario">
+					<legend>Detalhes do Jogo</legend>	
+
+					<label for="participantes">Número de Participantes:</label>
+					<input  class = "espaco_caixa" type = "number" value=2 min = 2 max = 12 id="participantes" name="nro_participantes"/><p></p>
+
+
+					<label for="quantia_inicial">Quantia inicial:</label>
+					<input  class = "espaco_caixa" type = "number" min = 100 value = "2000" id="quantia_inicial" name="quantia_inicial" />
+				
+				</fieldset>				
+
+				
+				<fieldset class = "formulario" id = "sem_borda">
+					<input class="button" type="submit" name="Começar o Jogo" value="Próximo">
+				</fieldset>
+			</form>
+		</section>
+	{% else %}
+		Faça o <a href="/login">Login</a> para acessar o jogo
+	{% endif %}
+	
+{% endblock %}

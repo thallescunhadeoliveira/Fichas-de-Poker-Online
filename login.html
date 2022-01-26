@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <form action="/login" method="post">
+		<fieldset class = "formulario" id = "sem_borda">
+            <input class="caixa" autocomplete="off" autofocus name="name" placeholder="Nome" type="text" >
+            <input class="button_login" type="submit" value="Login">
+		</fieldset>
+    </form>
+
+{% endblock %}
