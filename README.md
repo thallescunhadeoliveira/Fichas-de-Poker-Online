@@ -20,6 +20,6 @@ O design da aplicação também é responsivo para ser usado em mobile.
 A aplicação deixa como padrão o valor da conta do Pote de Apostas como destino pois facilita a grande maioria das transações. Também deixa como valor padrão o valor da última transação, facilitando as transações de mesmo valor de uma mesma rodada de apostas.
 
 <div align=center>
-  <img src=https://user-images.githubusercontent.com/89935401/151258905-ec960ff0-2d4b-475a-a784-0687c3439976.JPEG" alt="fichas_poker" >
-  <img src=https://user-images.githubusercontent.com/89935401/151258910-65e027c7-d1c8-42cc-b3e2-4319a68bd192.JPEG" alt="fichas_poker" width=75% >
+  <img src="https://user-images.githubusercontent.com/89935401/151258905-ec960ff0-2d4b-475a-a784-0687c3439976.JPEG" alt="fichas_poker" >
+  <img src="https://user-images.githubusercontent.com/89935401/151258910-65e027c7-d1c8-42cc-b3e2-4319a68bd192.JPEG" alt="fichas_poker" width=75% >
 </div>
