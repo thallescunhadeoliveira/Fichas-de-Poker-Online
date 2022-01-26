@@ -17,7 +17,7 @@ Podem cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial, todos
   
 O design da aplicação também é responsivo para ser usado em mobile.
   
-A aplicação deixa como padrão o valor da conta do Pote de Apostas como destino pois facilita a grande maioria das transações. Também deixa como valor padrão o valor da última transação, facilitando as transações de mesmo valor de uma mesma rodada de apostas.
+A aplicação deixa como padrão o valor da conta do Pote de Apostas como destino pois facilita a maioria das transações. Também deixa como valor padrão o valor da última transação, facilitando as transações de mesmo valor de uma mesma rodada de apostas.
 
 <div align=center>
   <img src="https://user-images.githubusercontent.com/89935401/151259726-de793c93-7d52-4b47-bf4f-69756226c1f3.jpeg" alt="fichas_poker" width=30% >
