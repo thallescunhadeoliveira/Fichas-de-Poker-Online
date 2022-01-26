@@ -1,10 +1,12 @@
 # Fichas de Poker Online
+
+<b>HTML, CSS, PYTHON, FLASK, SQL</b>
+
 Esse é um projeto de aplicação web que fiz para substituir o uso das fichas de poker quando não tiver disponível para jogar, os jogadores precisam apenas de um baralho.
 
 A aplicação é simples e tem como inputs os valores iniciais e os jogadores. Com isso é criado um banco de dados que simula as transações entre os jogadores e o pote de apostas, incluindo um registro de todas as transações pra facilitar o jogo.
 
 Podem cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial, todos os jogadores receberam essa quantia e o Pote de Apostas começa zerado.
-
 
 <div align=center>
   <img src="https://user-images.githubusercontent.com/89935401/151257622-228382a5-66ae-42b1-adc5-2fb91fc67ce2.JPG" alt="fichas_poker" width=75% >
