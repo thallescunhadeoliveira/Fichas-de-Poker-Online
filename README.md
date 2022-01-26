@@ -5,4 +5,4 @@ A aplicação é simples e tem como inputs os valores iniciais e os jogadores. C
 
 O design da aplicação também é responsivo para ser usado em mobile.
 
-<img src="/thallescunhadeoliveira/Fichas-de-Poker-Online/main/tela_inicial.JPEG" >
+<img src="/thallescunhadeoliveira/Fichas-de-Poker-Online/main/tela_inicial.JPG" >
