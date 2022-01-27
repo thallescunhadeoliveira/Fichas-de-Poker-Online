@@ -14,12 +14,12 @@ Pode-se cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial. Tod
   <img src="https://user-images.githubusercontent.com/89935401/151257624-6c61e1b0-f2b9-4e26-99b0-3334307f34e4.JPG" alt="fichas_poker" width=75% >
   <img src="https://user-images.githubusercontent.com/89935401/151257971-eb7d397d-a318-4d98-bffa-97153eb152ac.JPG" alt="fichas_poker" width=75% >
 
-
-<h2>Mobile</h2>
-  
-O design da aplicação também é responsivo para ser usado em mobile.
   
 A aplicação deixa como padrão o valor da conta do Pote de Apostas como destino pois facilita a maioria das transações. Também deixa como valor padrão o valor da última transação, facilitando as transações de mesmo valor de uma mesma rodada de apostas. É possível selecionar qualquer conta para pagar ou receber para qualquer valor acima de 1.
+
+  <h2>Mobile</h2>
+  
+O design da aplicação também é responsivo para ser usado em mobile.
 
 <div align=center>
   <img src="https://user-images.githubusercontent.com/89935401/151259726-de793c93-7d52-4b47-bf4f-69756226c1f3.jpeg" alt="fichas_poker" width=30% >
