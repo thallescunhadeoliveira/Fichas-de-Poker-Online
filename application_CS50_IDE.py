@@ -1,4 +1,4 @@
-# Este código tem alterações na forma de consulta SQL em relação ao documento anterior
+# Este código tem alterações na forma de consulta SQL em relação ao documento application.ipynb
 # Pode ser rodado no ambiente CS50 IDE, ambiente virtual Linux Ubuntu AWS disponibilizado por Harvard no curso de introdução à ciência de computação CS50
 
 from cs50 import SQL
@@ -41,25 +41,13 @@ def participantes():
 def poker():
     nro_participantes = int(request.form.get("nro_part"))
     quantia_inicial = request.form.get("qt_inicial")
-    p1 = request.form.get("p1")
-    p2 = request.form.get("p2")
-    p3 = request.form.get("p3")
-    p4 = request.form.get("p4")
-    p5 = request.form.get("p5")
-    p6 = request.form.get("p6")
-    p7 = request.form.get("p7")
-    p8 = request.form.get("p8")
-    p9 = request.form.get("p9")
-    p10 = request.form.get("p10")
-    p11 = request.form.get("p11")
-    p12 = request.form.get("p12")
-    part = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12]
-    i = 0
+    part = []
+    for i, item in enumerate(range(nro_participantes)):
+        part.append(request.form.get("p"+str(i+1)))
     db.execute("DELETE FROM participantes")
     db.execute("DELETE FROM transacoes")
-    for participante in range(nro_participantes):
+    for i, participante in enumerate(range(nro_participantes)):
         db.execute("INSERT INTO participantes(nome, quantia) VALUES(?, ?)", part[i], quantia_inicial)
-        i = i+1
     pote = "Pote"
     db.execute("INSERT INTO participantes(nome, quantia) VALUES(?, ?)", pote, 0)
     participantes = db.execute("SELECT * FROM participantes")
