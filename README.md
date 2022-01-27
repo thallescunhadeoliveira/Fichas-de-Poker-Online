@@ -22,6 +22,6 @@ A aplicação deixa pré-selecionada a conta do Pote de Apostas como destino poi
 O design da aplicação também é responsivo para ser usado em mobile.
 
 <div align=center>
-  <img src="https://user-images.githubusercontent.com/89935401/151259726-de793c93-7d52-4b47-bf4f-69756226c1f3.jpeg" alt="fichas_poker" width=30% >
-  <img src="https://user-images.githubusercontent.com/89935401/151259723-6905df91-9d68-44e8-a35a-ba4bb905bbc6.jpeg" alt="fichas_poker" width=30% >
+  <img src="https://user-images.githubusercontent.com/89935401/151259726-de793c93-7d52-4b47-bf4f-69756226c1f3.jpeg" alt="fichas_poker" width=30% margin-left=10 margin-right=10>
+  <img src="https://user-images.githubusercontent.com/89935401/151259723-6905df91-9d68-44e8-a35a-ba4bb905bbc6.jpeg" alt="fichas_poker" width=30% margin-left=10 margin-right=10>
 </div>
