@@ -2,7 +2,7 @@
 
 <b>HTML, CSS, PYTHON, FLASK, SQL</b>
 
-Esse é um projeto de aplicação web que fiz para substituir o uso das fichas de poker quando não tiver disponível para jogar, os jogadores precisam apenas de um baralho.
+Esse é um projeto de aplicação web que fiz para substituir o uso das fichas de poker quando não tiver disponível para jogar, assim os jogadores precisam apenas de um baralho.
 
 A aplicação é simples e tem como inputs o valor inicial para cada jogador assim como o número de jogadores e os nomes de cada um. Com isso é criado um banco de dados que simula as transações entre os jogadores e o pote de apostas, incluindo um registro de todas as transações pra facilitar o jogo.
 
