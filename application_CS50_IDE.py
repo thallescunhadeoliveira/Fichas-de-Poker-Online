@@ -32,9 +32,10 @@ def logout():
 
 @app.route("/participantes", methods=["POST", "GET"])
 def participantes():
+    nome_p1 = session["name"]
     nro_participantes = int(request.form.get("nro_participantes"))
     quantia_inicial = int(request.form.get("quantia_inicial"))
-    return render_template("participantes.html", nro_participantes=nro_participantes, quantia_inicial=quantia_inicial)
+    return render_template("participantes.html", nro_participantes=nro_participantes, quantia_inicial=quantia_inicial, nome_p1=nome_p1)
 
 @app.route("/poker", methods=["POST","GET"])
 def poker():
