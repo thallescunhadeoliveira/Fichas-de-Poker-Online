@@ -6,7 +6,7 @@ Esse é um projeto de aplicação web que fiz para substituir o uso das fichas d
 
 A aplicação é simples e tem como inputs o valor inicial para cada jogador assim como o número de jogadores e os nomes de cada um. Com isso é criado um banco de dados que simula as transações entre os jogadores e o Pote de Apostas, incluindo um histórico de todas as transações pra facilitar o jogo.
 
-Pode-se cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial, todos os jogadores receberão esse valor e o Pote de Apostas começa zerado.
+Pode-se cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial. Todos os jogadores receberão esse valor e o Pote de Apostas começa zerado.
 
 <div align=center>
   <img src="https://user-images.githubusercontent.com/89935401/151257622-228382a5-66ae-42b1-adc5-2fb91fc67ce2.JPG" alt="fichas_poker" width=75% >
