@@ -66,10 +66,17 @@ def poker2():
     conta_deb = db.execute("SELECT quantia FROM participantes WHERE id = ?", debito)
     nome_cred = db.execute("SELECT nome FROM participantes WHERE id = ?", credito)
     nome_deb = db.execute("SELECT nome FROM participantes WHERE id = ?", debito)
-    saldo_cred = int(float(conta_cred[0]['quantia'])) + valor
-    db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_cred, credito)
-    saldo_deb = int(float(conta_deb[0]['quantia'])) - valor
-    db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_deb, debito)
+    if valor != 0:
+        saldo_cred = int(float(conta_cred[0]['quantia'])) + valor
+        db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_cred, credito)
+        saldo_deb = int(float(conta_deb[0]['quantia'])) - valor
+        db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_deb, debito)
+    else:
+        valor = int(float(conta_deb[0]['quantia']))
+        saldo_cred = int(float(conta_cred[0]['quantia'])) + valor
+        db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_cred, credito)
+        saldo_deb = 0
+        db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_deb, debito)
     db.execute("INSERT INTO transacoes(de, para, quantia) VALUES(?, ?, ?)", nome_deb[0]["nome"], nome_cred[0]["nome"], valor)
     participantes = db.execute("SELECT * FROM participantes")
     transacoes = db.execute("SELECT * FROM transacoes ORDER BY id DESC")
