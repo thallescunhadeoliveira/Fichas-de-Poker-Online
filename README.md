@@ -15,7 +15,7 @@ Pode-se cadastrar de 2 a 12 jogadores e selecionar qualquer quantia inicial. Tod
 
 A aplicação deixa pré-selecionada a conta do Pote de Apostas como destino pois facilita a maioria das transações. Também deixa pré-definido para a quantia o valor da última transação, facilitando as transações de mesmo valor de uma mesma rodada de apostas. Assim que uma transação é feita, a conta do próximo participante é definida como padrão, pensando que as transações no Poker são feitas em ordem.
 
-É possível selecionar qualquer conta para pagar ou receber, e escolher qualquer valor acima de 1. Colocando o valor da transação como 0, o jogador pode transferir todo o valor de uma conta para outra sem precisar digitar o valor específico que a conta tem, deixando a usabilidade mais fácil nos casos de transferir todo o valor do Pote de Apostas ao vencedor da rodada ou no caso do jogar dar um All-in apostando todas as fichas.
+É possível selecionar qualquer conta para pagar ou receber, e escolher qualquer valor acima de 1. Colocando o valor da transação como 0, o jogador pode transferir todo o valor de uma conta para outra sem precisar digitar o valor específico que a conta tem de saldo, deixando a usabilidade mais fácil nos casos de transferir todo o valor do Pote de Apostas ao vencedor da rodada ou no caso do jogar dar um All-in apostando todas as fichas.
   
   <img src="https://user-images.githubusercontent.com/89935401/151257971-eb7d397d-a318-4d98-bffa-97153eb152ac.JPG" alt="fichas_poker" width=75% >
   
