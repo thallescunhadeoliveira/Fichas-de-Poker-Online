@@ -33,7 +33,7 @@ def logout():
     session["name"] = None
     return redirect("/")
 
-# participantes pega o nome da session para ser usado como o participante um, e tambem retorna número de participantes e quantia inicial dos participantes
+# a função participantes pega o nome da session para ser usado como o participante um, e tambem retorna número de participantes e quantia inicial dos participantes
 @app.route("/participantes", methods=["POST", "GET"])
 def participantes():
     nome_p1 = session["name"]
