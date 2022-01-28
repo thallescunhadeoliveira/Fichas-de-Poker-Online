@@ -58,10 +58,9 @@ def poker():
 def poker2():
     nro_participantes = int(request.form.get("nro_part"))
     quantia_inicial = int(request.form.get("qt_inicial"))
-    debito = request.form.get("debito")
-    credito = request.form.get("credito")
-    valor_s = request.form.get("valor")
-    valor = int(valor_s)
+    debito = int(request.form.get("debito"))
+    credito = int(request.form.get("credito"))
+    valor = int(request.form.get("valor"))
     conta_cred = db.execute("SELECT quantia FROM participantes WHERE id = ?", credito)
     conta_deb = db.execute("SELECT quantia FROM participantes WHERE id = ?", debito)
     nome_cred = db.execute("SELECT nome FROM participantes WHERE id = ?", credito)
@@ -77,7 +76,11 @@ def poker2():
         db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_cred, credito)
         saldo_deb = 0
         db.execute("UPDATE participantes SET quantia = ? WHERE id = ?", saldo_deb, debito)
+    if debito < nro_participantes:
+        debito_default = debito + 1
+    else:
+        debito_default = 1
     db.execute("INSERT INTO transacoes(de, para, quantia) VALUES(?, ?, ?)", nome_deb[0]["nome"], nome_cred[0]["nome"], valor)
     participantes = db.execute("SELECT * FROM participantes")
     transacoes = db.execute("SELECT * FROM transacoes ORDER BY id DESC")
-    return render_template("poker2.html", participantes=participantes, debito=debito, credito=credito, valor=valor, conta_deb=conta_deb, conta_cred=conta_cred, nro_participantes=nro_participantes, quantia_inicial=quantia_inicial, transacoes=transacoes )
+    return render_template("poker2.html", debito_default=debito_default, participantes=participantes, debito=debito, credito=credito, valor=valor, conta_deb=conta_deb, conta_cred=conta_cred, nro_participantes=nro_participantes, quantia_inicial=quantia_inicial, transacoes=transacoes )
