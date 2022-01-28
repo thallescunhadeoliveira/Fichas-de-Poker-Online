@@ -1,5 +1,5 @@
 # Este código tem alterações na forma de consulta SQL em relação ao documento application_pyodbc.ipynb
-# Pode ser rodado no ambiente CS50 IDE, ambiente virtual Linux Ubuntu AWS disponibilizado por Harvard no curso de introdução à ciência de computação CS50
+# Pode ser rodado no ambiente CS50 IDE, ambiente virtual cloud Linux Ubuntu AWS disponibilizado por Harvard no curso de introdução à ciência de computação CS50
 
 from cs50 import SQL
 from flask import Flask, render_template, request, session, redirect
